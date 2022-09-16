@@ -50,6 +50,10 @@ img {
   letter-spacing: 0.1rem;
 }
 
+.menu li a {
+  padding: 15px;
+}
+
 /* MAIN */
 
 .grid-section {
