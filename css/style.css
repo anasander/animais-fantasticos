@@ -95,7 +95,7 @@ img {
 }
 
 .lista-img {
-  height: 370px;
+  height: 400px;
   overflow-y: scroll;
   grid-column: 2;
 }
