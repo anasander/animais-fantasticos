@@ -117,9 +117,17 @@ html.textomaior {
 }
 
 .lista-img {
-  height: 400px;
+  height: 450px;
   overflow-y: scroll;
   grid-column: 2;
+}
+
+.lista-img li {
+  cursor: pointer;
+}
+
+.lista-img li:hover {
+  opacity: 0.8;
 }
 
 .lista-img::-webkit-scrollbar {
@@ -203,6 +211,28 @@ html.textomaior {
   background-color: #e36a35;
   padding: 1rem;
   font-weight: 700;
+}
+
+/* JavaScript TAB animais */
+.js .js-tabcontent section {
+  display: none;
+}
+
+.js .js-tabcontent section.ativo {
+  display: block;
+  animation: show 0.5s forwards;
+}
+
+/* animação JavaScript */
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 /* MEDIA QUERY */
