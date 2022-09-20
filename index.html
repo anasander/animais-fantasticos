@@ -15,7 +15,7 @@
 
 <body>
     <header class="menu-bg">
-        <nav class="menu">
+        <nav class="menu js-menu">
             <ul>
                 <li><a href="#animais">Animais</a></li>
                 <li><a href="#faq">FAQ</a></li>
@@ -24,11 +24,13 @@
             </ul>
         </nav>
     </header>
-
-    <main class="grid-section animais" id="animais">
+    <div class="grid-section aviso">
         <div class="aviso-bg">
             <p>Para aumentar/dimunuir a letra do site, aperte "T".</p>
         </div>
+    </div>
+
+    <main class="grid-section animais js-scroll" id="animais">
         <h1 class="titulo">Animais Fantásticos</h1>
 
         <ul class="lista-img js-tabmenu">
@@ -109,7 +111,7 @@
         </article>
     </main>
 
-    <section class="grid-section faq" id="faq">
+    <section class="grid-section faq js-scroll" id="faq">
         <h2 class="titulo">FAQ</h2>
         <dl class="lista-faq js-accordion">
             <dt>Qual a idade dos animais?</dt>
@@ -126,7 +128,7 @@
         </dl>
     </section>
 
-    <section class="grid-section contato" id="contato">
+    <section class="grid-section contato js-scroll" id="contato">
         <h2 class="titulo">Contato</h2>
         <div class="mapa">
             <img src="/img/mapa.jpg" alt="mapa">

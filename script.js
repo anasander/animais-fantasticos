@@ -32,6 +32,7 @@ function initTabNav() {
 }
 initTabNav();
 
+// Accordion list
 function initAccordion() {
   const accordionList = document.querySelectorAll(".js-accordion dt");
 
@@ -50,3 +51,54 @@ function initAccordion() {
   }
 }
 initAccordion();
+
+// Scroll suave dos links internos
+function initSmoothScroll() {
+  const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
+
+  function smoothScroll(event) {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute("href");
+    const section = document.querySelector(href);
+
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+
+    // modo alternativo com scrollTo()
+    // const topoSecao = section.offsetTop;
+    // window.scrollTo({
+    //   top: topoSecao,
+    //   behavior: "smooth",
+    // });
+  }
+
+  linksInternos.forEach((link) => {
+    link.addEventListener("click", smoothScroll);
+  });
+}
+initSmoothScroll();
+
+// seções aparecendo com animação suave
+function initAnimacaoScroll() {
+  const sections = document.querySelectorAll(".js-scroll");
+
+  if (sections.length) {
+    const windowMetade = window.innerHeight * 0.6;
+
+    function secaoAnimada() {
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top - windowMetade;
+        if (sectionTop < 0) {
+          section.classList.add("ativo");
+        }
+      });
+    }
+
+    secaoAnimada();
+
+    window.addEventListener("scroll", secaoAnimada);
+  }
+}
+initAnimacaoScroll();
