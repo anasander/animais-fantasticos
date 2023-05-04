@@ -6,7 +6,7 @@
 
 <h2>Project Description</h2>
 <p>A project of a site that describes various animals using HTML, CSS & JavaScript. Made as one of the projects from my JavaScript professional course on <a href='https://www.origamid.com/'>Origamid</a>.</p>
-<p>You can see the repository in action at: <a href='https://animais-fantasticos-lyart.vercel.app/'>Animais Fantásticos</a></p>
+<p>You can see the repository in action at: <a href='https://animais-fantasticos-lyart.vercel.app/'>Animais Fantásticos</a>.</p>
 </br>
 
 ![animaisfantasticos](https://user-images.githubusercontent.com/108422924/231240932-0dd50948-69dc-4154-9cc9-72f417db769e.png)
